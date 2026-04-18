@@ -1,0 +1,58 @@
+.results-panel {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-bottom: 1px solid #2d3a5a;
+}
+
+.panel-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.stats-row { display: flex; gap: 16px; }
+.stat { display: flex; flex-direction: column; align-items: center; background: #1e2740; border-radius: 8px; padding: 10px 20px; flex: 1; }
+.stat-value { font-size: 1.5rem; font-weight: 700; color: #7dd3fc; }
+.stat-label { font-size: 0.7rem; color: #64748b; text-transform: uppercase; }
+
+.filename { font-size: 0.75rem; color: #475569; word-break: break-all; }
+
+.no-pockets { font-size: 0.85rem; color: #64748b; text-align: center; padding: 12px; }
+
+.pocket-list { display: flex; flex-direction: column; gap: 8px; }
+
+.pocket-card {
+  background: #1e2740;
+  border: 1px solid #2d3a5a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+.pocket-card:hover { border-color: #7dd3fc; }
+.pocket-card.active { border-color: #34d399; background: #0f2a1e; }
+
+.pocket-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.pocket-num { font-weight: 600; font-size: 0.9rem; }
+.pocket-conf { font-size: 0.85rem; color: #34d399; font-weight: 700; }
+
+.pocket-meta { font-size: 0.75rem; color: #64748b; display: flex; gap: 10px; margin-bottom: 6px; }
+
+.conf-bar { height: 4px; background: #2d3a5a; border-radius: 2px; overflow: hidden; }
+.conf-fill { height: 100%; background: linear-gradient(90deg, #1d4ed8, #34d399); border-radius: 2px; transition: width 0.4s; }
+
+.residue-list { border-top: 1px solid #2d3a5a; padding-top: 14px; }
+.residue-grid { display: flex; flex-wrap: wrap; gap: 6px; max-height: 160px; overflow-y: auto; }
+.residue-tag {
+  background: #1e2740;
+  border: 1px solid #2d3a5a;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-family: monospace;
+}

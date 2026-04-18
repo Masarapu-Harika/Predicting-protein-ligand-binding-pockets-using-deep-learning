@@ -1,0 +1,9 @@
+torch>=2.0
+torch-geometric
+biopython
+scikit-learn
+numpy
+matplotlib
+plotly
+tqdm
+scipy

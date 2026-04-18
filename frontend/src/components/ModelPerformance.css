@@ -1,0 +1,65 @@
+.model-performance {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem 3rem;
+  background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.perf-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.perf-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.perf-header p {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+}
+
+.perf-charts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.perf-chart-box {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.perf-chart-box h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.metrics-loading, .metrics-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: var(--text-dim);
+}
+
+.metrics-error {
+  color: #fca5a5;
+}
